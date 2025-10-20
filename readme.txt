@@ -32,6 +32,19 @@ I could have added more informations such as calrie level, sugar (glucose) level
 
 I could implemnt the web app to allow users to add restaurant information (menu, pictures, etc.). I could also implement the web app to import restaurant and menu information from public source (e.g., search engine, maps, conventional restaurant guide, etc.). However, these are not the innovative part of my app challenge idea.
 
+### To Install Virtual Environment
+
+We use a module named virtualenv which is a tool to create isolated Python environments. virtualenv creates a folder that contains all the necessary executables to use the packages that a Python project would need.
+
+Create Python virtual environment:
+pip install virtualenv
+
+Go to the local directory where you want to create your Flask app.
+
+Activate a virtual environment:
+virtualenv venv
+source ./venv/bin/activate
+
 
 ### To run the server
 
