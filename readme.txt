@@ -28,7 +28,7 @@ flask, sqlite3, jinja2
 
 Things to improve:
 
-I could have added more informations such as calrie level, sugar (glucose) level. But as for a prototype, I did not include those to keep it simple and focus on showing my innovative concept.
+I could have added more informations such as calorie level, sugar (glucose) level. But as for a prototype, I did not include those to keep it simple and focus on showing my innovative concept.
 
 I could implemnt the web app to allow users to add restaurant information (menu, pictures, etc.). I could also implement the web app to import restaurant and menu information from public source (e.g., search engine, maps, conventional restaurant guide, etc.). However, these are not the innovative part of my app challenge idea.
 
