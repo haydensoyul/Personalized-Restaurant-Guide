@@ -18,7 +18,7 @@ It allows me to add note to remind me what to ask or avoid
 
 For rating and spiciness, I implemented this web app to calculate weighted moving average. It is simple to calculate and does not require memories to store all the previous entries. Also, it is a good respresentation of latest trend. 
 
-WMA (weighted moving average) = 0.9 * PW (preveious WMA) + 0.1 * CE (current entry)
+WMA (weighted moving average) = 0.8 * PW (preveious WMA) + 0.2 * CE (current entry)
 
 Programming languages used:
 Python3, HTML
