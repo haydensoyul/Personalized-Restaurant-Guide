@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Potomac K-Food</title>
+    </head>
+    <style>
+	h1{
+    	    font-size: 50px;
+    	    text-align: center;
+	}
+	button{
+	    font-size: 40px;
+	}
+        table, th, td {
+          text-align: center;
+          border: none;
+          font-size: 30px;
+        }
+        </style>
+    <body>
+        <h1>
+       	<button class="btn" type="button" style="width:100%; font-size:60px" onclick="window.location.href='{{ url_for('index') }}';">
+ Personalized Restaurant Guide</button>
+        User: Hayden Ahn
+        </h1>
+        <p style="font-size: 80px;"> <strong> Potomac K-Food </strong> </p>
+	<img src="/static/korean.png" width="950" height="250" />
+        <p style="font-size: 50px;"> <strong> Menu </strong> </p>
+	
+	<button class="btn" type="button" style="width:100%" onclick="window.location.href='{{ url_for('kfood_m1') }}';">
+	  <table style="width:100%" border="hidden">
+	    <tr>
+	      <th>
+	        <img src="/static/kfood_m1.jpg" width="120" height="120" />
+	      </th>
+	      <th>
+	        <p style="font-size: 30px;">Dolsot Bibim Bop</p>
+	        <p style="font-size: 25px;">Asorted rice with grined beef and mixed vegetables in hot stone pot</p>
+	      </th>
+	    </tr>
+	  </table>
+	</button><br>
+	<table style="width:100%">
+	    <tr>
+              <th style="width:12%;"># of orders</th>
+              <th style="width:12%;">% of orders</th>
+              <th style="width:15%;">Rating (1~5)</th>
+              <th style="width:15%;">Spiciness (1~5)</th>
+              <th>Remarks</th>
+	    </tr>
+            <tr>
+               <td>{{data[0][1]}}</td>
+               <td>{{data[0][2]}} %</td>
+               <td>{{data[0][3]}}</td>
+               <td>{{data[0][4]}}</td>
+               <td>{{data[0][5]}}</td>
+            </tr>
+	</table><br><br>
+
+	<button class="btn" type="button" style="width:100%" onclick="window.location.href='{{ url_for('kfood_m2') }}';">
+	  <table style="width:100%" border="hidden">
+	    <tr>
+	      <th>
+	        <img src="/static/kimchi.jpg" width="120" height="120" />
+	      </th>
+	      <th>
+	        <p style="font-size: 30px;">Kimchi Soup</p>
+	        <p style="font-size: 25px;">A soup boiled with kimchi, tofu, and vegetables</p>
+	      </th>
+	    </tr>
+	  </table>
+	</button><br>
+	    
+	<table style="width:100%">
+	    <tr>
+              <th style="width:12%;"># of orders</th>
+              <th style="width:12%;">% of orders</th>
+              <th style="width:15%;">Rating (1~5)</th>
+              <th style="width:15%;">Spiciness (1~5)</th>
+              <th>Remarks</th>
+	    </tr>
+            <tr>
+               <td>{{data[1][1]}}</td>
+               <td>{{data[1][2]}} %</td>
+               <td>{{data[1][3]}}</td>
+               <td>{{data[1][4]}}</td>
+               <td>{{data[1][5]}}</td>
+            </tr>
+	</table><br><br>
+
+
+	<button class="btn" type="button" style="width:100%" onclick="window.location.href='{{ url_for('kfood_m3') }}';">
+	  <table style="width:100%" border="hidden">
+	    <tr>
+	      <th>
+	        <img src="/static/pajun.jpg" width="120" height="120" />
+	      </th>
+	      <th>
+	        <p style="font-size: 30px;">Pajun</p>
+	        <p style="font-size: 25px;">Korean style pancake with scallions and potato flour</p>
+	      </th>
+	    </tr>
+	  </table>
+	</button><br>
+	
+	<table style="width:100%">
+	    <tr>
+              <th style="width:12%;"># of orders</th>
+              <th style="width:12%;">% of orders</th>
+              <th style="width:15%;">Rating (1~5)</th>
+              <th style="width:15%;">Spiciness (1~5)</th>
+              <th>Remarks</th>
+	    </tr>
+            <tr>
+               <td>{{data[2][1]}}</td>
+               <td>{{data[2][2]}} %</td>
+               <td>{{data[2][3]}}</td>
+               <td>{{data[2][4]}}</td>
+               <td>{{data[2][5]}}</td>
+            </tr>
+	</table><br><br>
+	 
+    </body>
+</html>

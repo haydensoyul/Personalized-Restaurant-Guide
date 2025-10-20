@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRG</title>
+    </head>
+    <body>
+    	<style>
+    	h1{
+    	    font-size: 65px;
+	}
+	button{
+	    font-size: 65px;
+	}
+	</style>
+        <h1>Personalized Restaurant Guide</h1>
+        <h1>Welcome!! Hayden Ahn!</h1>
+        <button class="btn" type="button" onclick="window.location.href='{{ url_for('kfood') }}';"><img src="/static/korean.png" width="800" height="250" /><br/>Potomac K-Food Restaurant</button><br/>
+        <br><br>
+        <button class="btn" type="button" onclick="window.location.href='{{ url_for('kfood') }}';"><img src="/static/pizza.png" width="800" height="250" /><br/>Famous NYC Pizza</button><br/>
+        <br><br>
+        <button class="btn" type="button" onclick="window.location.href='{{ url_for('kfood') }}';"><img src="/static/naz.jpg" width="500" height="250" /><img src="/static/corby.jpg" width="300" height="250" /> <br/>The Corby Kitchen</button><br/>
+        <br><br>
+        <button class="btn" type="button" onclick="window.location.href='{{ url_for('kfood') }}';"><img src="/static/ramen.png" width="800" height="250" /><br/>Kajiken</button><br/>
+        <br><br>
+        <button class="btn" type="button" onclick="window.location.href='{{ url_for('kfood') }}';"><img src="/static/pasta.png" width="800" height="250" /><br/>La Speranza Restaurant</button><br/>
+    </body>
+</html>
